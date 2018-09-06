@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-Description: AgiPlan
+Bundle-SymbolicName: AgiPlan
+Built-By: chanuka
+Bundle-ManifestVersion: 2
+Bnd-LastModified: 1536036157762
+Import-Package: org.apache.commons.logging,org.apache.synapse,org.apac
+ he.synapse.mediators
+DynamicImport-Package: *
+Tool: Bnd-1.15.0
+Export-Package: com.agiplan.internal;uses:="org.apache.synapse.mediato
+ rs,org.apache.commons.logging,org.apache.synapse"
+Bundle-Name: AgiPlan
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.8.0_144
+

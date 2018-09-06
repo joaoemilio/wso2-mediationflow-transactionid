@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="GenerateID" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <property name="AGIPLAN_ID" scope="default" type="STRING" value=""/>
+    <log description="CustomLog" level="custom">
+        <property name="here" value="here >>>>>"/>
+    </log>
+    <class name="samples.mediators.SimpleClassMediator">
+        <property name="AGIPLAN_ID" value="0"/>
+    </class>
+    <log description="CustomLog" level="custom">
+        <property expression="get-property('AGIPLAN_ID')" name="AGIPLAN_ID_Val"/>
+    </log>
+</sequence>

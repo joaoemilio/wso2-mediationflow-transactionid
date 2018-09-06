@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="TransactionIdGenerate" startOnLoad="true" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
+    <target>
+        <inSequence>
+            <class name="com.agiplan.internal.TransactionIdGenarator"/>
+            <log level="custom">
+                <property expression="get-property('AGIPLAN_ID')" name="AGIPLAN_ID_Val"/>
+            </log>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </target>
+</proxy>
